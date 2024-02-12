@@ -1,0 +1,7 @@
+got to cmd and go to project location
+mvn compile---> compile testcases
+mvn test --> compile and run testscases
+>mvn test -Dcucumber.options="--tags @AdPlace"  ---to run testcases with @AddPlace tags only
+mvn tets verify ----to get reports as well
+
+//D is for parameter
