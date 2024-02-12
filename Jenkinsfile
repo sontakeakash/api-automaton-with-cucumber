@@ -1,6 +1,7 @@
 pipeline 
   { 
-    agent any stages 
+    agent any 
+    stages 
       { 
         stage('Build') 
         { 
@@ -10,19 +11,19 @@ pipeline
             } 
         } 
        stage('Test') 
-          { 
+        { 
             steps 
             { 
               echo 'Test project' 
             }
-          } 
+        } 
         stage('Deploy') 
-          { 
+        { 
             steps 
               { 
                 echo 'Deploy project' 
               } 
-          } 
+        } 
       } 
     post 
     { 
